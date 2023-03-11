@@ -5,32 +5,6 @@ UA info: https://brand.arizona.edu/how-add-milo-your-website
 UA info: http://uadigital.arizona.edu/ua-bootstrap/fonts.html
 */
 
-/*STANDARD COLORS
-#5B7894
-#D2A054
-#AF6C39
-#972A25
-#566D2F
-#DB88A2
-
-OLD COLORS
-#3377b3*/
-
-
-/*p.dropcapimg::first-letter {*/
-/*  background-image: url(https://i.stack.imgur.com/WecKn.png);*/
-/*  background-size: contain;*/
-/*  background-repeat: no-repeat;*/
-/*  background-center: center center;*/
-/*  float: left;*/
-/*  font-size: 6rem;*/
-/*  line-height: 0.65;*/
-/*  color: transparent;*/
-/*  margin-right: -0.15em;*/
-/*}*/
-
-
-
 body { /*https://blog.koenvangilst.nl/brutalist-css/*/
     font-family: MiloSerifWeb, MiloWeb, Georgia, TimesNewRoman, "Times New Roman", Times, Baskerville, serif;
     font-size: 16px;
@@ -41,15 +15,15 @@ body { /*https://blog.koenvangilst.nl/brutalist-css/*/
     color: #444444;
 }
 
-/*p {*/
-/*  line-height: 32px;   !* within paragraph *!*/
-/*  margin-bottom: 30px; !* between paragraphs *!*/
-/*  }*/
+.dark-mode {
+  background-color: black;
+  color: darkgray;
+}
 
 .firstcharacter {
   color: #903;
   float: left;
-  font-family: Georgia;
+  font-family: MiloSerifWeb, MiloWeb, Georgia, TimesNewRoman, "Times New Roman", Times, Baskerville, serif;
   font-size: 50px;
   line-height: 40px;
   padding-top: 4px;
@@ -57,40 +31,17 @@ body { /*https://blog.koenvangilst.nl/brutalist-css/*/
   padding-left: 3px;
 }
 
-code {
-    color: #777;
-    font-family: monospace;
-    font-size: 14px;
-    background: whitesmoke;
-    border-radius: .2rem;
-    padding: .1rem .3rem .2rem;
-}
-
-pre {
-    color: #777;
-    font-family: monospace;
-    font-size: 14px;
-    background: whitesmoke;
-    border-radius: .2rem;
-    padding: .1rem .3rem .2rem;
-}
-
 a {
-    color:#3377b3;
+    color: #903;
     text-decoration: none;
     /*border-bottom: dotted 1px;*/
 }
 
 a:hover {
-    /*color: #5B7894;*/
-    color: #2D5FAB;
-    /*background:whitesmoke;*/
-    background: #EDCEA8;
+    background: whitesmoke;
     border-radius: 0.1rem;
-    /*text-decoration: underline;*/
     border-bottom: dotted 1px;
 }
-
 
 
 h1 {
@@ -214,75 +165,50 @@ ul.cols {
     color: gray;
 }
 
+.gloria {
+    font-style: italic;
+}
+
+
+/*!* Button *!*/
+
+/*input[type="submit"],*/
+/*input[type="reset"],*/
+/*input[type="button"],*/
+/*button,*/
+/*.button {*/
+/*    border-radius: 0.375em;*/
+/*    display: inline-block;*/
+/*    font-size: 0.8em;*/
+/*    font-weight: 700;*/
+/*    height: 3.5em;*/
+/*    letter-spacing: 0.075em;*/
+/*    line-height: 3.5em;*/
+/*    padding: 0 2.25em;*/
+/*    text-align: center;*/
+/*    text-transform: uppercase;*/
+/*    white-space: nowrap;*/
+/*    background-color: #5B7894;*/
+/*    color: #ffffff !important;*/
+/*}*/
+
+/*.button:hover {*/
+/*    border-radius: 0.375em;*/
+/*    background-color: #D2A054;*/
+/*    box-shadow: 5px 8px 8px 0 rgba(0, 0, 0, 0.2), 5px 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+/*    border-bottom: none;*/
+/*}*/
 
 /* Button */
 
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
 button,
 .button {
-    border-radius: 0.375em;
-    display: inline-block;
-    font-size: 0.8em;
-    font-weight: 700;
-    height: 3.5em;
-    letter-spacing: 0.075em;
-    line-height: 3.5em;
-    padding: 0 2.25em;
-    text-align: center;
-    text-transform: uppercase;
-    white-space: nowrap;
-    background-color: #5B7894;
-    color: #ffffff !important;
-}
-
-.button:hover {
-    border-radius: 0.375em;
-    background-color: #D2A054;
-    box-shadow: 5px 8px 8px 0 rgba(0, 0, 0, 0.2), 5px 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-bottom: none;
+    background-color: darkgray;
+    border-radius: 1em;
+    border-width: 0
 }
 
 
-
-
-/*Bootstrap style alerts */
-
-.info, .success, .warning, .error {
-margin: 10px 0px;
-padding:12px;
- 
-}
-.info {
-    color: #00529B;
-    background-color: #BDE5F8;
-    border-radius: 4px;
-    border: .5px solid #00529B;
-}
-.success {
-    color: #4F8A10;
-    background-color: #DFF2BF;
-    border-radius: 4px;
-    border: .5px solid #4F8A10;
-}
-.warning {
-    color: #9F6000;
-    background-color: #FEEFB3;
-    border-radius: 4px;
-    border: .5px solid #9F6000;
-}
-.error {
-    color: #D8000C;
-    background-color: #FFD2D2;
-    border-radius: 4px;
-    border: .5px solid #D8000C;
-}
-.info i, .success i, .warning i, .error i {
-    margin:10px 22px;
-    font-size:2em;
-    vertical-align:middle;
-}
 
 
 
@@ -353,7 +279,6 @@ border-top: 0 !important;
 /* Header */
 
 header {
-    /*qq*/
     border-bottom: solid 5px #63666a;
     overflow: hidden;
     text-align: center;
@@ -364,33 +289,6 @@ header {
     margin: 0 0 -1.5em 0;
 }
 
-header a {
-    float: left;
-    color: #444444;
-    padding: .2rem 0.75rem 0 0.75rem;
-    text-decoration: none;
-    border-radius: 0.1rem;
-}
-
-header a.logo {
-    /*font-size: 25px;*/
-    font-weight: bold;
-    color: #777;
-    text-decoration: none;
-    /*border-bottom: dotted 1px;*/
-
-}
-
-header a:hover {
-    background-color: #green;
-    background: whitesmoke;
-    border-radius: 0.2rem;
-    border-bottom: none;
-}
-
-header-right {
-  float: right;
-}
 
 @media screen and (max-width: 500px) {
   header a {
@@ -413,6 +311,11 @@ header-right {
     padding: 0em 0.1em 0.1em 0.1em;
 }
 
+#footer .img {
+    border-radius: 5em;
+}
+
+
 #footer .copyright a {
     color: inherit;
     border-bottom: dotted 1px;
@@ -422,33 +325,4 @@ header-right {
     color: #5B7894;
     background:whitesmoke;
     text-decoration: none;
-}
-
-
-
-
-/* Change a word on hover */
-
-span[data-spell] {
-  display: inline-block;
-  border-bottom: 1px dotted lightgrey;
-  /*cursor: help;*/
-}
-
-span[data-spell]::before,
-span[data-spell]::after {
-  display: none;
-}
-
-span[data-spell]::before {
-  content: attr(data-spell);
-}
-
-span[data-spell]::after {
-  content: attr(data-original);
-}
-
-span[data-original]:not(:hover)::before,
-span[data-spell]:hover::after {
-  display: block;
 }
