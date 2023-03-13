@@ -8,11 +8,12 @@ UA info: http://uadigital.arizona.edu/ua-bootstrap/fonts.html
 body { /*https://blog.koenvangilst.nl/brutalist-css/*/
     font-family: MiloSerifWeb, MiloWeb, Georgia, TimesNewRoman, "Times New Roman", Times, Baskerville, serif;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.3;
     max-width: 50rem;
     padding: 2rem;
     margin: auto;
     color: #444444;
+    font-weight: 600;
 }
 
 .dark-mode {
@@ -21,18 +22,18 @@ body { /*https://blog.koenvangilst.nl/brutalist-css/*/
 }
 
 .firstcharacter {
-  color: #903;
+  color: #7B2E2B;
   float: left;
   font-family: MiloSerifWeb, MiloWeb, Georgia, TimesNewRoman, "Times New Roman", Times, Baskerville, serif;
   font-size: 50px;
   line-height: 40px;
-  padding-top: 4px;
+  padding-top: 0px;
   padding-right: 5px;
   padding-left: 3px;
 }
 
 a {
-    color: #903;
+    color: #7B2E2B;
     text-decoration: none;
     /*border-bottom: dotted 1px;*/
 }
@@ -58,7 +59,7 @@ h1.line {
 }
 
 h2 {
-    color: #903;
+    color: #7B2E2B;
     text-align: left;
     font-variant-caps: small-caps;
     font-weight: bold;
@@ -121,29 +122,27 @@ ul.cols {
 
 .ant {
     font-family: MiloSerifWeb, Georgia, TimesNewRoman, "Times New Roman", Times, Baskerville, serif;
-    font-weight: 700;
+    font-weight: 400;
     text-align: justify;
 }
 
 .ant:before {
     font-family: MiloWeb, MiloSerifWeb, Georgia, TimesNewRoman, "Times New Roman", Times, Baskerville, serif;
-    color: #903;
+    color: #7B2E2B;
     font-weight: 700;
     content: "Ant. "
 }
 
 .verse {
     font-family: MiloWeb, MiloSerifWeb, Georgia, TimesNewRoman, "Times New Roman", Times, Baskerville, serif;
-    color: #903;
+    color: #7B2E2B;
     font-weight: 700;
-    /*font-style: italic;*/
 }
 
 .subtitle {
     font-family: MiloSerifWeb, Georgia, TimesNewRoman, "Times New Roman", Times, Baskerville, serif;
     font-size: 0.9em;
-    color: #903;
-    /*text-align: center;*/
+    color: #7B2E2B;
 }
 
 .quote {
@@ -156,17 +155,20 @@ ul.cols {
     font-family: MiloWeb, MiloSerifWeb, Georgia, TimesNewRoman, "Times New Roman", Times, Baskerville, serif;
     font-size: 0.9em;
     font-style: italic;
-    color: #903;
+    color: #7B2E2B;
 }
 
 .detail {
     font-family: MiloWeb, MiloSerifWeb, Georgia, TimesNewRoman, "Times New Roman", Times, Baskerville, serif;
     font-size: 0.7em;
     color: gray;
+    font-style: italic;
 }
 
 .gloria {
     font-style: italic;
+    font-weight: 400;
+    text-align: justify;
 }
 
 
